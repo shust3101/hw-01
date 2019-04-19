@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    <h2>HTML Forms</h2>
 
-<form action="/action_page.php">
-  First name:<br>
-  <input type="text" name="firstname" value="Mickey">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse">
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
+<body>
+    <h2>Client form</h2>
+
+    <form method="POST" action="https://formspree.io/shustyan31@gmail.com">
+        First name:<br>
+        <input type="text" name="firstname" placeholder="Yurii">
+        <br> Last name:<br>
+        <input type="text" name="lastname" placeholder="Shust">
+        <br> Email:<br>
+        <input type="email" name="email" placeholder="example@gmail.com">
+        <br> Gender:<br>
+        <input type="radio" value="male" name="gender" checked>Male
+        <input type="radio" value="female" name="gender">Female
+        <input type="radio" value="other" name="gender">Other
+        <br> Do you like animals? <br>
+        <input type="radio" value="yes" name="Do you like animals" checked>Yes
+        <input type="radio" value="no" name="Do you like animals">No
+        <input type="radio" value="yes, but i have allergy" name="Do you like animals">Yes, but i have allergy
+        <br> Do you want to help our little brothers? <br>
+        <input type="radio" value="Yes" name="do you want to help our little brothers" checked>Yes
+        <input type="radio" value="Yes, of course" name="do you want to help our little brothers">Yes, of course
+        <input type="radio" value="Literally,yes!" name="do you want to help our little brothers">Literally, yes!
+        <br>
+        <input type="submit" value="Submit">
+        
+    </form>
 </body>
+
 </html>
